@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style type="text/css">
+            ul.menu{
+                width: 300px;
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                border-radius: 5px;
+                box-shadow: 0 0 5px orange;
+            }
+            ul.menu>li>a{
+                display: block;
+                line-height: 30px;
+                border-bottom: 1px dotted orange;
+                text-decoration: none;
+                font-variant: small-caps;
+                color: orange;
+                padding-left: 25px;
+            }
+            ul.menu>li>a:hover{
+                color: red;
+                background-color: orange;
+            }   
+
+            ul.hmenu{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                background-color: orange;
+                border-radius: 5px;
+                height: 40px;
+                box-shadow: 0 0 5px orange;
+            }
+            ul.hmenu>li{
+                float: left;
+                margin: 0 15px;
+                position: relative;
+            }
+            ul.hmenu>li>a{
+               display: block;
+               line-height: 40px;
+               text-decoration: none;
+               color: white;
+               font-weight: 900;
+               padding-left: 25px;
+            }
+            ul.hmenu>li>a:hover{
+                color:yellow;
+            }
+            ul.hmenu>li:hover>.submenu{
+                display: block;
+            }
+            
+            .submenu{
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                border-radius: 5px;
+                box-shadow: 0 0 5px orange;
+                width: 150px;
+                position: absolute;
+                display: none;
+            }
+            .submenu>li>a{
+                display: block;
+                line-height: 30px;
+                text-decoration: none;
+                color: orange;
+            }
+            .submenu>li>a:hover{
+                color: white;
+                background-color: orange;
+            }
+        </style>
+
+    </head>
+    <body>
+        <ul class="hmenu">
+            <li><a href="#">Trang chu</a></li>
+            <li><a href="#">San pham</a>
+                <ul class="submenu">
+                    <li><a href="#">Quan</a></li>
+                    <li><a href="#">Ao</a></li>
+                    <li><a href="#">giay dep</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Gop y</a></li>
+            <li><a href="#">Lien he</a></li>    
+        </ul>
+        <!--
+        <ul class="menu">
+            <li><a href="#">thu 2</a></li>
+            <li><a href="#">thu 3</a></li>
+            <li><a href="#">thu 4</a></li>
+            <li><a href="#">thu 5</a></li>
+            <li><a href="#">thu 6</a></li>       
+        </ul>
+    -->
+    </body>
+</html>
